@@ -31,7 +31,7 @@ const Post = ({ post }) => {
 		},
 		onSuccess: (data) => {
 			toast.success("Post deleted successfully")
-			queryClient.invalidateQueries({queryKey: ["posts5"]})
+			queryClient.invalidateQueries({queryKey: ["posts"]})
 		}
 	})
 	const postOwner = post.user;

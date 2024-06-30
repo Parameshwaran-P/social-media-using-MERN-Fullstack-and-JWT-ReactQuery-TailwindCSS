@@ -23,13 +23,8 @@ const CreatePost = () => {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
-						
 					},
-					body: JSON.stringify({
-						text,
-						img,
-						
-					}),
+					body: JSON.stringify({ text, img}),
 				})
 				const data = await res.json()
 				if (!res.ok) {
@@ -114,3 +109,5 @@ const CreatePost = () => {
 	);
 };
 export default CreatePost;
+
+
