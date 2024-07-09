@@ -89,7 +89,7 @@ const Post = ({ post }) => {
 			}
 		},
         onSuccess:()=>{
-			toast.success("Comment added successfully")
+			toast.success("Your Comment added successfully")
 			setComment("")
 			queryClient.invalidateQueries({queryKey: ["posts"]})
 		},
