@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import avatarPlacehoder from "../../assets/avatar-placeholder.png";
 
+
 import Posts from "../../components/common/Posts";
 import ProfileHeaderSkeleton from "../../components/skeletons/ProfileHeaderSkeleton";
 import EditProfileModal from "./EditProfileModal";
@@ -178,7 +179,7 @@ const ProfilePage = () => {
 													rel='noreferrer'
 													className='text-sm text-blue-500 hover:underline'
 												>
-													youtube.com/@asaprogrammer_
+													youtube.com/@{user?.username}
 												</a>
 											</>
 										</div>

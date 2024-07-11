@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import useUpdateUserProfile from "../../hooks/useUpdateUserProfile";
 
 const EditProfileModal = ({authUser}) => {
-	const queryClient = useQueryClient();
+
 	const [formData, setFormData] = useState({
 		fullName: "",
 		username: "",
