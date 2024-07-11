@@ -4,9 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev":"nodemon backend/app.js",
-    "start": "node backend/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development nodemon backend/app.js",
+    "start": "cross-env NODE_ENV=production node backend/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "mongoose": "^8.4.3"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.4"
   }
 }
