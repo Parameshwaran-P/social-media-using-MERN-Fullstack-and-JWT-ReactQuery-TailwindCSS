@@ -39,7 +39,7 @@ const RightPanel = () => {
 							<RightPanelSkeleton />
 							<RightPanelSkeleton />
 							<RightPanelSkeleton />
-							
+	
 							
 						</>
 					)}
