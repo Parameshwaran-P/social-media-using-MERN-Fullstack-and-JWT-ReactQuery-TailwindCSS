@@ -3,6 +3,7 @@ import RightPanelSkeleton from "../skeletons/RightPanelSkeleton";
 import { useQuery } from "@tanstack/react-query";
 import useFollow from "../../hooks/useFollow";
 import LoadingSpinner from "./LoadingSpinner";
+import avatarPlacehoder from "../../assets/avatar-placeholder.png";
 
 const RightPanel = () => {
 	const {data: suggestedUsers, isLoading} = useQuery({
@@ -36,6 +37,13 @@ const RightPanel = () => {
 							<RightPanelSkeleton />
 							<RightPanelSkeleton />
 							<RightPanelSkeleton />
+							<RightPanelSkeleton />
+							<RightPanelSkeleton />
+							<RightPanelSkeleton />
+							<RightPanelSkeleton />
+							<RightPanelSkeleton />
+							<RightPanelSkeleton />
+							
 						</>
 					)}
 					{!isLoading &&
@@ -48,7 +56,7 @@ const RightPanel = () => {
 								<div className='flex gap-2 items-center'>
 									<div className='avatar'>
 										<div className='w-8 rounded-full'>
-											<img src={user.profileImg || "/avatar-placeholder.png"} />
+											<img src={user.profilePic || avatarPlacehoder} />
 										</div>
 									</div>
 									<div className='flex flex-col'>

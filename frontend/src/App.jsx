@@ -38,7 +38,7 @@ function App() {
       </div>)
   }
   return (
-    <>
+    
       <div className='flex max-w-6xl mx-auto'>
         {authUser && <Sidebar/>}
         <Routes>
@@ -51,7 +51,7 @@ function App() {
         {authUser && <RightPanel/>}
         <Toaster/>
       </div>
-    </>
+    
   )
 }
 
