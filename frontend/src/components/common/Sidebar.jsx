@@ -1,12 +1,12 @@
 
-
+import avatarPlacehoder from "../../assets/avatar-placeholder.png";
 import { MdHomeFilled } from "react-icons/md";
 import { IoNotifications } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
 import XSvg from "../svgs/XSvg";
-import boy1 from '../../assets/avatars/boy1.png'
+
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 
@@ -84,7 +84,7 @@ const Sidebar = () => {
 					>
 						<div className='avatar hidden md:inline-flex'>
 							<div className='w-8 rounded-full'>
-								<img src={authUser?.profilePic || "/avatar-placeholder.png"} />
+								<img src={authUser?.profilePic || avatarPlacehoder} />
 							</div>
 						</div>
 						<div className='flex justify-between flex-1'>
